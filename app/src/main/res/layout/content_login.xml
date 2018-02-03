@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.phasemaps.azio.phasemapsbeacon.LoginActivity"
+    tools:showIn="@layout/activity_login"
+    tools:ignore="GradleDependency"
+    android:background="@drawable/gradient2">
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        android:weightSum="1"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:srcCompat="@drawable/pborange"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/txtLogInEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:ems="10"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/txtLogInPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:ems="10"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="@string/action_sign_in_short"
+            android:layout_weight="0.04"
+            android:onClick="signIn" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
